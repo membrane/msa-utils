@@ -1,0 +1,1 @@
+docker run -d --ip 175.0.0.3 --net shopnet -p 8084:8084 --name cataloge-service cataloge-service

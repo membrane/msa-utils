@@ -1,0 +1,10 @@
+{
+  "action": "create",
+  "type": "article",
+  "object": {
+    "uuid": "b32ca647-b880-4cd3-ab51-224dcd4567e8",
+    "name": "Pineapples",
+    "price": 6.99,
+    "quantity": 5000
+  }
+}

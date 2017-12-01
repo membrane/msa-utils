@@ -1,0 +1,10 @@
+{
+  "action": "create",
+  "type": "article",
+  "object": {
+    "uuid": "d996413a-21fb-4c12-b4a8-64996876505b",
+    "name": "Bananas",
+    "price": 2.99,
+    "quantity": 1000
+  }
+}
