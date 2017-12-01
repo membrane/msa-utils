@@ -5,7 +5,7 @@
 echo 'Performing checkout request'
 
 basket_uuid=$(curl --request POST \
-  --url http://localhost:8082/checkouts \
+  --url http://localhost:8083/checkout-service/checkouts \
   --header 'content-type: application/json' \
   --data '{
   "customer": "41440721-19db-4a02-8fd8-b6a0f3427d46",
@@ -26,7 +26,7 @@ basket_uuid=$(curl --request POST \
 echo "Performing payment request with basket id $basket_uuid"
 
 curl --request POST \
-  --url "http://localhost:8085/payments/$basket_uuid" \
+  --url "http://localhost:8083/payment-service/payments/$basket_uuid" \
   --header 'content-type: application/json' \
   --data '{
 	"method": "CC"
