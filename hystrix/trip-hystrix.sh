@@ -6,7 +6,6 @@ for i in {1..100}; do
     curl --request POST \
       --url http://localhost:8081/checkouts \
       --header 'content-type: application/json' \
-      --cookie JSESSIONID=8ED36E6FF6B5061C680177D7358E1864 \
       --data '{
       "customer": "41440721-19db-4a02-8fd8-b6a0f3427d46",
       "items": [
