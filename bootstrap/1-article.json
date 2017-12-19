@@ -1,6 +1,6 @@
 {
   "action": "create",
-  "type": "article",
+  "bo": "article",
   "object": {
     "uuid": "cab08236-1924-4f90-975d-9e056ed14c48",
     "name": "Apples",
