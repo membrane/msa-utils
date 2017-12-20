@@ -50,8 +50,8 @@ public class Application {
 		obj.put("price", "1.99");
 		obj.put("quantity", "1000");
 
-		for (int i = 0; i < 100_000; i++){
-			obj.put("uudi", UUID.randomUUID().toString());
+		for (int i = 0; i < 200_000; i++){
+			obj.put("uuid", UUID.randomUUID().toString());
 			obj.put("name", "Apples " + i);
 
 			try {
