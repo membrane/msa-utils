@@ -1,0 +1,9 @@
+POST http://localhost:8085/payments/a1ebbbff-0baa-4d82-9d8f-390489369213
+Content-Type: application/json
+
+{
+    "method": "CC"
+}
+
+###
+
