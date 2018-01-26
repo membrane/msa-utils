@@ -42,3 +42,11 @@ http://localhost:5601/app/kibana
 # Spring Cloud Sleuth
 
 **spring.application.name** muss in bootstrap.properties gesetzt werden
+
+## Zipkin UI aufrufen
+
+http://localhost:9411/zipkin/
+
+## Prometheus
+
+http://localhost:8081/prometheus
