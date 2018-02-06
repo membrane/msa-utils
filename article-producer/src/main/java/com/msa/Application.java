@@ -10,6 +10,7 @@ import com.msa.service.KafkaSender;
 import org.springframework.context.annotation.Bean;
 
 import javax.annotation.PostConstruct;
+import java.util.Random;
 import java.util.UUID;
 import java.util.HashMap;
 
@@ -43,16 +44,17 @@ public class Application {
 	public void rndGenArticle(){
 		long start = System.nanoTime();
 		HashMap<String, Object> article = new HashMap<>();
-		HashMap<String, String> obj = new HashMap<>();
+		HashMap<String, Object> obj = new HashMap<>();
 		article.put("action", "create");
 		article.put("bo", "article");
 		article.put("object", obj);
-		obj.put("price", "1.99");
-		obj.put("quantity", "1000");
+
 
 		for (int i = 0; i < 200_000; i++){
 			obj.put("uuid", UUID.randomUUID().toString());
 			obj.put("name", "Apples " + i);
+			obj.put("price", Math.random()*6);
+			obj.put("quantity", (int) Math.random()*1000);
 
 			try {
 				String data = mapper.writeValueAsString(article);
