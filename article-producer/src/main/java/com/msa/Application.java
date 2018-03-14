@@ -50,7 +50,7 @@ public class Application {
 		article.put("object", obj);
 
 
-		for (int i = 0; i < 200_000; i++){
+		for (int i = 0; i < 1_000_000; i++){
 			obj.put("uuid", UUID.randomUUID().toString());
 			obj.put("name", "Apples " + i);
 			obj.put("price", Math.random()*6);
