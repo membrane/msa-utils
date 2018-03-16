@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker rm -f postgres-customer
+docker run -d --name postgres-customer -e POSTGRES_PASSWORD=customer -e POSTGRES_USER=customer -p 5434:5432 postgres
