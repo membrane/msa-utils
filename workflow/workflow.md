@@ -1,5 +1,5 @@
 <!-- 
-Zunächst einmal möchte ich Sie alle zum Microservices Workshop willkommen heißen. Meine Name ist Oliver Weiler, und ich werde Sie die kommenden 4 Tage durch den Workshop.
+Zunächst einmal möchte ich Sie alle zum Microservices Workshop willkommen heißen. Meine Name ist Oliver Weiler, und ich werde Sie die kommenden 4 Tage durch den Workshop begleiten.
 
 Worum geht es? Wir werden eine Reihe Microservices implementieren, wir werden uns ansehen, wo der Unterschied zum klassischen Monolithen besteht, Vorteile, Nachteile, Event Sourcing als alternative zu REST, Probleme synchroner Kommunikation im Backend.
 
@@ -38,6 +38,8 @@ FOLIEN!
 DISKUSSION: Warum Kafka, Kafka vs. klassische Message-Broker
 
 ## msa-catalogue
+
+### Voraussetzungen
 
 ### Service testen
 
@@ -145,9 +147,7 @@ DISKUSSION: Probleme von (synchronen) (HTTP)-Aufrufen? Das Circuit Breaker Patte
 ## Spring Boot Anwendungen administrieren mit Spring Boot Admin
 
 * msa-admin implementieren
-* an Service-Discovery
-
-TODO
+* an Service-Discovery anbinden
 
 ## Sonstiges
 
