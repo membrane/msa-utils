@@ -1,0 +1,32 @@
+version: '2'
+services:
+  catalogue:
+    build: 
+      context: ./msa-catalogue
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-catalogue:5432/catalogue
+      SPRING_CLOUD_CONSUL_HOST: consul
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: http://kafka:9092
+  postgres-catalogue:
+     image: postgres
+     environment:
+       POSTGRES_USER: catalogue
+       POSTGRES_PASSWORD: catalogue
+  consul:
+     image: consul
+     environment:
+       CONSUL_BIND_INTERFACE: eth0
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
