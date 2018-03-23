@@ -1,7 +1,8 @@
-version: '2'
+version: '3'
 services:
   catalogue:
     build: 
+      # for this to work put the docker-compose.yml in msa-catalogue's parent directory
       context: ./msa-catalogue
     ports:
       - "8080:8080"
