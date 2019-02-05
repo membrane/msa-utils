@@ -45,7 +45,7 @@ public class Application {
 		long start = System.nanoTime();
 		HashMap<String, Object> article = new HashMap<>();
 		HashMap<String, Object> obj = new HashMap<>();
-		article.put("action", "create");
+		article.put("action", "upsert");
 		article.put("bo", "article");
 		article.put("object", obj);
 
