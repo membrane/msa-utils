@@ -1,1 +1,0 @@
-docker run -d --ip 175.0.0.2 --net shopnet -e CONSUL_BIND_INTERFACE=175.0.0.2 -p 8500:8500 --name consul consul agent -dev
