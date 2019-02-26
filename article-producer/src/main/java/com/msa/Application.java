@@ -42,6 +42,7 @@ public class Application {
 
 	@PostConstruct
 	public void rndGenArticle(){
+
 		long start = System.nanoTime();
 		HashMap<String, Object> article = new HashMap<>();
 		HashMap<String, Object> obj = new HashMap<>();
