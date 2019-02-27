@@ -1,5 +1,5 @@
 {
-  "action": "create",
+  "action": "upsert",
   "bo": "article",
   "object": {
     "uuid": "9748e6e2-0483-4423-affc-3d9404ba693d",
