@@ -6,10 +6,10 @@ echo "Downloading consul version $VERSION"
 
 if [[ ! -f consul ]]; then
 	if [[ $OSTYPE == "darwin"* ]]; then
-		wget "https://releases.hashicorp.com/consul/$VERSION/consul_$VERSION_darwin_amd64.zip"
+		wget "https://releases.hashicorp.com/consul/${VERSION}/consul_${VERSION}_darwin_amd64.zip"
 	fi
 	if [[ $OSTYPE == "linux-gnu" ]]; then
-		wget https://releases.hashicorp.com/consul/$VERSION/consul_$VERSION_linux_amd64.zip
+		wget https://releases.hashicorp.com/consul/${VERSION}/consul_${VERSION}_linux_amd64.zip
 	fi  
 fi
 
