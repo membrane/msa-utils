@@ -1,3 +1,3 @@
 # Pfad auf lokale Installation anpassen
 
-~/local/logstash/logstash-6.6.0/bin/logstash -f tcp-json.conf
+~/tmp/msa-bn-190923/logstash-7.3.2/bin/logstash -f tcp-json.conf
